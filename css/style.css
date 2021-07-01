@@ -1,0 +1,218 @@
+:root {
+    --bodyColor: #777;
+    --blue: #4f9ec5;
+    --lightGrey: #eee;
+    --gray: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+button {
+    background: var(--blue);
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 20px 20px 20px 0;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background: var(--gray);
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+/********************************************************************
+********************************************************************
+                         H E A D E R
+********************************************************************
+********************************************************************/
+
+header {
+    background-image: linear-gradient(rgba(0,0,0.3), rgba(255, 255, 255, 0.79)), url(../img/header.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    border-top: 10px solid var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 5px var(--gray);
+}
+
+header p {
+    color: var(--gray);
+    font-size: 1.7rem;
+}
+
+
+/********************************************************************
+********************************************************************
+                         I N T R O
+********************************************************************
+********************************************************************/
+
+.intro {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro .row:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro .col {
+    flex: 0 0 30%;
+    line-height: 1.5;
+}
+
+.intro hr {
+    border: none;
+    background: var(--blue);
+    height: 2px;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.intro .row:nth-child(2) .col p {
+    text-align: justify;
+    margin: 20px 0 10px 0;
+}
+
+.intro i {
+    color: var(--blue);
+    font-size: 3rem;
+    margin-bottom: 7px;
+}
+/*******************************************************************
+********************************************************************
+                         B L O G
+********************************************************************
+********************************************************************/
+
+.blog .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog .col {
+    flex: 0 0 47%;
+}
+
+.blog .col img {
+    width: 100%;
+    border-radius: 50px 50px 50px 0;
+    box-shadow: 4px 4px var(--blue);
+}
+
+.blog .col h3{
+    margin: 10px 0 10px 0;
+    font-size: 1.6rem;
+    color: #6b6b6b;
+}
+/*******************************************************************
+********************************************************************
+                         F O O T E R
+********************************************************************
+********************************************************************/
+
+footer {
+    padding: 100px 0;
+    background: var(--gray);
+    text-align: center;
+    color: #eee;
+    margin-top: 60px;
+}
+
+footer a {
+    font-size: 2rem;
+    color: var(--blue);
+    margin: 20px 10px;
+}
+
+footer a:hover {
+    color: var(--bodyColor);
+    transition: .6s ease;
+}
+
+footer hr {
+    border: none;
+    background: var(--blue);
+    height: 2px;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/*******************************************************************
+********************************************************************
+                     R E S P O N S I V E
+********************************************************************
+********************************************************************/
+
+@media (max-width: 760px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+
+    .intro {
+        padding: 100px 0;
+        text-align: center;
+    }
+    
+    .intro h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    .intro .row:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .intro .col {
+        flex: 0 0 85%;
+        line-height: 1.5;
+        margin: auto;
+        margin-top: 50px;
+    }
+    /*******************************************************************
+********************************************************************
+                         B L O G
+********************************************************************
+********************************************************************/
+
+.blog .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog .col {
+    flex: 0 0 95%;
+    margin-top: 50px;
+}   
+}
